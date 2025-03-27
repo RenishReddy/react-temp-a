@@ -1,5 +1,5 @@
 import { useState } from "react";
-//import "./App.css";
+import "./App.css";
 import { BrowserRouter, Link,Routes,Route } from "react-router-dom";
 import App1 from "./components/App1";
 import App2 from "./components/App2";
