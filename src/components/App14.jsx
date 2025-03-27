@@ -1,10 +1,15 @@
 import React from "react";
-import Home from "./Home";
-export default function App13() {
+import Parent from "./Parent";
+import Child1 from "./Child1";
+import Child2 from "./Child2";
+export default function App14() {
   return (
-    <>
-      <h3>This is App13</h3>
-      <Home name="John" age={34} />
-    </>
+    <div>
+      <h3>This is App14</h3>
+      <Parent>
+        <Child1/>
+        <Child2/>
+      </Parent>
+    </div>
   );
 }
