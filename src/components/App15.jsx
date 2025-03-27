@@ -1,13 +1,17 @@
 import React from "react";
-import { FaHome } from "react-icons/fa";
+import { FaHome,FaAddressBook  } from "react-icons/fa";
 export default function App15() {
-    return (
+  return (
+    <div>
+      <h3>This is App15</h3>
       <div>
-          <h3>This is App15</h3>
+        <FaHome size={15} />
+        <label>Home</label>
+      </div>
       <div>
-      <FaHome size={15} />
-      <label>Home</label>
+        <FaAddressBook size={15}/>
+        <label>Contact</label>
       </div>
-      </div>
-    );
+    </div>
+  );
 }
