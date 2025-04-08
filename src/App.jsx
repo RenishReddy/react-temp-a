@@ -21,8 +21,6 @@ import App17 from "./components/App17";
 import App18 from "./components/App18";
 import App19 from "./components/App19";
 import App20 from "./components/App20";
-import App21 from "./components/App21";
-import App22 from "./components/App22";
 function App() {
   return (
     <BrowserRouter>
@@ -45,10 +43,8 @@ function App() {
         <Link to="app16">App16</Link>-
         <Link to="app17">App17</Link>-
         <Link to="app18">App18</Link>-
-        <Link to="app19">App19</Link>
+        <Link to="app19">App19</Link>-
         <Link to="app20">App20</Link>
-        <Link to="app21">App21</Link>
-        <Link to="app22">App22</Link>
       </div>
       <hr></hr>
       <div>
@@ -74,8 +70,6 @@ function App() {
           <Route path="app18" element={<App18 />} />
           <Route path="app19" element={<App19 />} />
           <Route path="app20" element={<App20 />} />
-          <Route path="app21" element={<App21 />} />
-          <Route path="app22" element={<App22 />} />
         </Routes>
       </div>
     </BrowserRouter>
