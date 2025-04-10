@@ -1,4 +1,3 @@
-// Install first: npm install react-router-dom
 
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
