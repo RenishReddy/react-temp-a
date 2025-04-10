@@ -1,19 +1,26 @@
-import React, { useState } from 'react';
+// Install first: npm install react-router-dom
 
-function Counter() {
-  const [count, setCount] = useState(0);
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
-  const increment = () => setCount(count + 1);
-  const decrement = () => setCount(count - 1);
-
-  return (
-    <div style={{ textAlign: 'center', padding: '50px' }}>
-      <h1>React Counter</h1>
-      <h2>{count}</h2>
-      <button onClick={decrement} style={{ marginRight: '10px' }}>-</button>
-      <button onClick={increment}>+</button>
-    </div>
-  );
+function Home() {
+  return <h2>Home Page</h2>;
+}
+function About() {
+  return <h2>About Page</h2>;
 }
 
-export default Counter;
+function App() {
+  return (
+    <BrowserRouter>
+      <nav>
+        <Link to="/">Home</Link> | 
+        <Link to="/about">About</Link>
+      </nav>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
