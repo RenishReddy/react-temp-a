@@ -1,25 +1,12 @@
+import React, { useState } from 'react';
 
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+function Counter() {
+  const [count, setCount] = useState(0);
 
-function Home() {
-  return <h2>Home Page</h2>;
-}
-function About() {
-  return <h2>About Page</h2>;
-}
-
-function App() {
   return (
-    <BrowserRouter>
-      <nav>
-        <Link to="/">Home</Link> | 
-        <Link to="/about">About</Link>
-      </nav>
-
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-    </BrowserRouter>
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>Click me</button>
+    </div>
   );
 }
